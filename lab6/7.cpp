@@ -10,7 +10,7 @@ class test{
     static int count;
     public:
     void setcode(){
-        code=++count;
+        code = ++count;
     }
     void showcode(){
         cout<<"code="<<code<<endl;
@@ -20,14 +20,14 @@ class test{
     }
 };
 int test::count;
-    int main (){
+int main (){
     test t1, t2;
     t1.setcode();
     t2.setcode();
-    test::showcount):
+    test::showcount();
     test t3;
     t3.setcode();
-    test::showcount);
+    test::showcount();
     t1.showcode();
     t2.showcode();
     t3.showcode();

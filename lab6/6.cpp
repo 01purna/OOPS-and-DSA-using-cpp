@@ -10,7 +10,7 @@ class Bank{
     float pamount, si;
     int rate, time;
     public:
-    void setdata(float p, int r, int t){
+    void setdata(float p, int t, int r=15){
         pamount = p;
         rate = r;
         time = t;
@@ -27,7 +27,7 @@ class Bank{
 };
 int main(){
     float principle;
-    int size, time, rate=15;
+    int size, time;
     cout<<"enter the number of accounts:"<<endl;
     cin>>size;
     Bank *ptr;
@@ -35,7 +35,7 @@ int main(){
     for(int i=0; i<size; i++){
         cout<<"enter the principle and time period of account "<<i+1<<endl;
         cin>>principle>>time;
-        ptr[i].setdata(principle, rate, time);
+        ptr[i].setdata(principle, time);
         ptr[i].calculate();
         ptr[i].display();
     }
