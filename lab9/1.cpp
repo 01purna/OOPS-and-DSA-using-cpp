@@ -18,9 +18,7 @@ class Area{
 };
 int main(){
     Area a;
-
     cout<<"the area of a squere (5) : "<<a.area(5)<<endl;
     cout<<"the area of a rectange (4, 5) :  "<<a.area(4,5)<<endl;
     cout<<"the area of a triange (4.1, 4.2) : "<<a.area(4.1f, 4.2f)<<endl;
-
 }

@@ -6,37 +6,41 @@ in main function and display the area of triangle and rectangle.
 */
 #include <iostream>
 using namespace std;
-class Shape{
+class Shape {
+    protected:
     int base, hight;
-    public:
-    void getdata(){
-        cout<<"enter the base"<<endl;
-        cin>>base;
-        cout<<"enter the hight"<<endl;
-        cin>>hight;
-    }
-    virtual void area()=0;
+public:
+    virtual void area() = 0; 
 };
-class Triangle: public Shape{
-    int area;
+class Tringle : public Shape {
     public:
-    void calculate(){
-         area = (base*hight)/2;
+    void getsetdata(){
+        base = 10;
+        hight = 20;
     }
-    void area(){
-        cout<<"area of a triangle is"<<area<<endl;
+    void area() {
+        cout << "Area of a triangle is " <<(base*hight)/2<< endl;
     }
 };
-class Reactanle: public Shape{
-    int area;
+class Rectangle : public Shape {
     public:
-    void calculate(){
-         area = (base*hight);
+    void getsetdata(){
+        base = 20;
+        hight = 20;
     }
-    void area(){
-        cout<<"area of a reactangle is"<<area<<endl;
+    void area() {
+        cout << "Area of a triangle is " <<(base*hight)<< endl;
     }
 };
-int main(){
-    
+int main() {
+    Shape *bptr;
+    Tringle t;
+    Rectangle r;
+    bptr = &t;
+    bptr->setdata();
+    bptr->area(); 
+    bptr = &r;
+    bptr->setdata();
+    bptr->area(); 
+    return 0;
 }

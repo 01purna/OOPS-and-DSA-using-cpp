@@ -25,7 +25,8 @@ public:
 int main() {
     Student s1;              // Creating an object of class Student
     s1.setData("John", 20);  // Calling member function
-    s1.display();            // Displaying object data
+    s1.display();   
+              // Displaying object data
 
     return 0;
 }

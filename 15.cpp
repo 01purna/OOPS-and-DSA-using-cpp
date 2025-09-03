@@ -1,3 +1,8 @@
+// lets assume youare developing a LMS(learining management system ) for a PU
+// how u usedifferent data structure on this applicatipon exmpalin with example
+
+
+
 /*
 Create a base class Shape with a virtual method draw( ). Derive two classes Circle and
 Square, each implementing the draw () method. Demonstrate the principle of
@@ -34,11 +39,8 @@ int main() {
     bptr->draw(); 
     bptr = &s; 
     bptr->draw(); 
- 
-
     Circle *cptr = &c;
     cptr->specialFeature(); 
-  
     return 0;
 }
 
